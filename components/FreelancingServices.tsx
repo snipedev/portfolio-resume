@@ -88,9 +88,7 @@ export default function FreelancingServices({
 
         {/* Alternative Contact */}
         <div className="text-center">
-          <p className="text-xs text-white/60 mb-3">
-            Prefer direct email?
-          </p>
+          <p className="text-xs text-white/60 mb-3">Prefer direct email?</p>
           <a
             href={`mailto:${freelancing.cta.email}`}
             className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-white/80 transition hover:bg-white/10"

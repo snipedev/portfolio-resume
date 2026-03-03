@@ -7,6 +7,7 @@ The freelancing services page includes a complete inquiry collection system that
 ## Features
 
 ### Services Offered
+
 1. **Full-Stack Development** - Web applications, APIs, databases, scalable architecture
 2. **Backend Systems** - REST APIs, microservices, databases, optimization
 3. **Cloud & DevOps** - AWS/GCP/Azure, Kubernetes, CI/CD pipelines, infrastructure
@@ -17,6 +18,7 @@ The freelancing services page includes a complete inquiry collection system that
 ### Form Fields
 
 The inquiry form collects:
+
 - **Name** (required) - Client name
 - **Email** (required) - Contact email
 - **Company** (optional) - Company/organization name
@@ -46,12 +48,14 @@ User sees confirmation message
 ## Components
 
 ### FreelancingServices (Main Page)
+
 - Location: `components/FreelancingServices.tsx`
 - Renders service grid with descriptions
 - Displays inquiry form
 - Shows success/error messages
 
 ### FreelancingInquiryForm
+
 - Location: `components/FreelancingInquiryForm.tsx`
 - Captures all inquiry data
 - Validates required fields
@@ -60,6 +64,7 @@ User sees confirmation message
 - Displays result messages with icons
 
 ### API Endpoint
+
 - Location: `app/api/freelancing/inquiries/route.ts`
 - **POST**: Submits new inquiry
   - Validates name, email, project_description
@@ -73,16 +78,16 @@ User sees confirmation message
 
 ```typescript
 interface FreelancingInquiry {
-  id: string;                          // UUID primary key
-  created_at: string;                  // ISO timestamp
-  name: string;                        // Required
-  email: string;                       // Required
-  company?: string;                    // Optional
-  project_description: string;         // Required
-  services_interested: string[];       // Array of service names
-  budget_range?: string;               // One of: "$0-25k", "$25k-50k", "$50k-100k", "$100k+"
-  timeline?: string;                   // One of: "Immediate", "1-3 months", "3-6 months", "6+ months"
-  status: 'new' | 'contacted' | 'in_discussion' | 'won' | 'lost';  // Default: 'new'
+  id: string; // UUID primary key
+  created_at: string; // ISO timestamp
+  name: string; // Required
+  email: string; // Required
+  company?: string; // Optional
+  project_description: string; // Required
+  services_interested: string[]; // Array of service names
+  budget_range?: string; // One of: "$0-25k", "$25k-50k", "$50k-100k", "$100k+"
+  timeline?: string; // One of: "Immediate", "1-3 months", "3-6 months", "6+ months"
+  status: "new" | "contacted" | "in_discussion" | "won" | "lost"; // Default: 'new'
 }
 ```
 
@@ -108,10 +113,10 @@ CREATE TABLE freelancing_inquiries (
 );
 
 -- Create indexes for performance
-CREATE INDEX idx_freelancing_inquiries_created_at 
+CREATE INDEX idx_freelancing_inquiries_created_at
 ON freelancing_inquiries(created_at DESC);
 
-CREATE INDEX idx_freelancing_inquiries_status 
+CREATE INDEX idx_freelancing_inquiries_status
 ON freelancing_inquiries(status);
 
 -- Enable RLS
@@ -133,6 +138,7 @@ USING (true);
 ### 2. Update Environment Variables
 
 In your `.env` file, add:
+
 ```
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
@@ -166,6 +172,7 @@ curl -X POST http://localhost:3000/api/freelancing/inquiries \
 ```
 
 Response (Success):
+
 ```json
 {
   "data": {
@@ -190,6 +197,7 @@ curl http://localhost:3000/api/freelancing/inquiries
 ```
 
 Response:
+
 ```json
 {
   "data": [
@@ -211,16 +219,19 @@ The form validates and shows clear error messages:
 ## Next Steps
 
 ### Short-term
+
 1. ✅ Form submits inquiries to database
 2. ✅ Inquiries stored with proper schema
 3. ✅ Error handling implemented
 
 ### Medium-term
+
 - Email notifications when inquiry submitted
 - Email sent to your address with inquiry details
 - Auto-acknowledgment email to client
 
 ### Long-term
+
 - Admin dashboard to view/manage inquiries
 - Filter and search inquiries
 - Update inquiry status (contacted, won, lost)
@@ -249,16 +260,19 @@ lib/
 ## Maintenance
 
 ### Monitor Inquiries
+
 - Check Supabase dashboard regularly
 - Review status of inquiries
 - Follow up with promising leads
 
 ### Update Services
+
 - Edit `data/freelancing.json` to add/remove services
 - Update service descriptions as needed
 - Form will automatically reflect changes
 
 ### Troubleshooting
+
 - Check browser console for errors
 - Review Vercel logs for server errors
 - Check Supabase logs for database issues

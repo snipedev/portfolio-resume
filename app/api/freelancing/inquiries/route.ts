@@ -149,10 +149,11 @@ export async function GET(request: Request) {
       {
         success: false,
         error:
-          error instanceof Error ? error.message : "Failed to retrieve inquiries",
+          error instanceof Error
+            ? error.message
+            : "Failed to retrieve inquiries",
       },
       { status: 500 },
     );
   }
 }
-

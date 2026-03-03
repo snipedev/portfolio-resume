@@ -3,12 +3,14 @@
 ## Project Setup
 
 ### 1. Create Supabase Project
+
 1. Go to [supabase.com](https://supabase.com)
 2. Create a new project
 3. Choose a region close to your users
 4. Set a strong database password
 
 ### 2. Get API Keys
+
 1. Go to Settings → API
 2. Note the following:
    - **Project URL**: Supabase base URL endpoint
@@ -21,21 +23,23 @@
 The project uses `@supabase/supabase-js` for both client and server:
 
 **Client-side** (`lib/supabase.ts`):
+
 ```typescript
 import { createClient } from "@supabase/supabase-js";
 
 export const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
 );
 ```
 
 **Server-side** (in API routes):
+
 ```typescript
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.SUPABASE_SERVICE_ROLE_KEY!,
-  { auth: { persistSession: false } }
+  { auth: { persistSession: false } },
 );
 ```
 
@@ -44,6 +48,7 @@ const supabase = createClient(
 ### Required Tables
 
 #### `freelancing_inquiries`
+
 Stores inquiries from the freelancing services page.
 
 ```sql
@@ -61,10 +66,10 @@ CREATE TABLE freelancing_inquiries (
 );
 
 -- Create index for faster queries
-CREATE INDEX idx_freelancing_inquiries_created_at 
+CREATE INDEX idx_freelancing_inquiries_created_at
 ON freelancing_inquiries(created_at DESC);
 
-CREATE INDEX idx_freelancing_inquiries_status 
+CREATE INDEX idx_freelancing_inquiries_status
 ON freelancing_inquiries(status);
 ```
 
@@ -97,6 +102,7 @@ USING (auth.role() = 'authenticated');
 ### API Endpoints
 
 **Submit inquiry:**
+
 ```bash
 curl -X POST http://localhost:3000/api/freelancing/inquiries \
   -H "Content-Type: application/json" \
@@ -112,6 +118,7 @@ curl -X POST http://localhost:3000/api/freelancing/inquiries \
 ```
 
 **Retrieve inquiries:**
+
 ```bash
 curl http://localhost:3000/api/freelancing/inquiries
 ```
@@ -119,16 +126,19 @@ curl http://localhost:3000/api/freelancing/inquiries
 ## Common Issues
 
 ### SSL/TLS Connection Errors
+
 - Ensure you're using the correct `SUPABASE_SERVICE_ROLE_KEY`
 - Verify the `NEXT_PUBLIC_SUPABASE_URL` format
 - Check that Supabase project is active
 
 ### Table Not Found Errors
+
 - Verify the SQL schema was executed in Supabase SQL Editor
 - Check table name matches exactly (case-sensitive in some contexts)
 - Ensure RLS policies aren't blocking operations
 
 ### Authentication Errors
+
 - For public inserts: Don't use `auth.uid()` checks without RLS policies
 - For admin operations: Verify service role key has correct permissions
 - Check that JWT secret is configured correctly

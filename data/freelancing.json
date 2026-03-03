@@ -5,7 +5,14 @@
     {
       "title": "Full-Stack Development",
       "description": "Build complete web applications from database to UI. I specialize in creating robust systems using modern tech stacks.",
-      "technologies": ["Next.js", "React", "TypeScript", "PostgreSQL", "Redis", "AWS"],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Redis",
+        "AWS"
+      ],
       "highlights": [
         "Production-ready architectures",
         "Type-safe end-to-end applications",
@@ -16,7 +23,14 @@
     {
       "title": "Backend Systems",
       "description": "Design and build scalable backend services. I have expertise in building resilient microservices and APIs.",
-      "technologies": ["Go", "C#/.NET", "Python", "Kafka", "PostgreSQL", "eventStore"],
+      "technologies": [
+        "Go",
+        "C#/.NET",
+        "Python",
+        "Kafka",
+        "PostgreSQL",
+        "eventStore"
+      ],
       "highlights": [
         "Event-driven architectures",
         "High-performance systems",
@@ -49,7 +63,11 @@
     {
       "title": "Technical Architecture",
       "description": "Design systems that scale. I help you plan the right tech stack and structure for your project.",
-      "technologies": ["System Design", "Technology Selection", "Scalability Planning"],
+      "technologies": [
+        "System Design",
+        "Technology Selection",
+        "Scalability Planning"
+      ],
       "highlights": [
         "Architectural planning",
         "Technology recommendations",
@@ -60,7 +78,11 @@
     {
       "title": "Code Review & Mentoring",
       "description": "Improve code quality and help your team grow. Architecture reviews and engineering mentorship.",
-      "technologies": ["System Design Reviews", "Code Quality", "Best Practices"],
+      "technologies": [
+        "System Design Reviews",
+        "Code Quality",
+        "Best Practices"
+      ],
       "highlights": [
         "Architecture reviews",
         "Code quality improvement",

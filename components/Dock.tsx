@@ -1,4 +1,11 @@
-import { User, Briefcase, FolderTree, ShieldCheck, Zap, Mail } from "lucide-react";
+import {
+  User,
+  Briefcase,
+  FolderTree,
+  ShieldCheck,
+  Zap,
+  Mail,
+} from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Dock({ onOpen }: { onOpen: (id: string) => void }) {
