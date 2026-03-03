@@ -7,6 +7,7 @@ import TerminalAbout from "@/components/TerminalAbout";
 import ExperienceTimeline from "@/components/ExperienceTimeline";
 import ProjectsExplorer from "@/components/ProjectsExplorer";
 import LeadershipWindow from "@/components/LeadershipWindow";
+import FreelancingServices from "@/components/FreelancingServices";
 import ContactPanel from "@/components/ContactPanel";
 import profile from "@/data/profile.json";
 
@@ -58,6 +59,12 @@ export default function Home() {
               View Experience
             </button>
             <button
+              onClick={() => setOpen("freelancing")}
+              className="rounded-lg border border-border bg-white/5 px-3 py-1.5 text-white/80 transition hover:bg-white/10"
+            >
+              Freelancing
+            </button>
+            <button
               onClick={() => setOpen("contact")}
               className="rounded-lg border border-neon/40 bg-neon/10 px-3 py-1.5 text-neon transition hover:bg-neon/20"
             >
@@ -78,6 +85,9 @@ export default function Home() {
         )}
         {open === "leadership" && (
           <LeadershipWindow onClose={() => setOpen(null)} />
+        )}
+        {open === "freelancing" && (
+          <FreelancingServices onClose={() => setOpen(null)} />
         )}
         {open === "contact" && <ContactPanel onClose={() => setOpen(null)} />}
       </div>
