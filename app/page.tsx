@@ -45,32 +45,7 @@ export default function Home() {
               <p className="mt-2 text-sm text-white/75">{profile.headline}</p>
             </div>
           </div>
-          <div className="flex flex-wrap items-center gap-2 text-xs">
-            <button
-              onClick={() => setOpen("projects")}
-              className="rounded-lg border border-border bg-white/5 px-3 py-1.5 text-white/80 transition hover:bg-white/10"
-            >
-              View Projects
-            </button>
-            <button
-              onClick={() => setOpen("experience")}
-              className="rounded-lg border border-border bg-white/5 px-3 py-1.5 text-white/80 transition hover:bg-white/10"
-            >
-              View Experience
-            </button>
-            <button
-              onClick={() => setOpen("freelancing")}
-              className="rounded-lg border border-border bg-white/5 px-3 py-1.5 text-white/80 transition hover:bg-white/10"
-            >
-              Freelancing
-            </button>
-            <button
-              onClick={() => setOpen("contact")}
-              className="rounded-lg border border-neon/40 bg-neon/10 px-3 py-1.5 text-neon transition hover:bg-neon/20"
-            >
-              Contact
-            </button>
-          </div>
+
         </div>
       </section>
 
