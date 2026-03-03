@@ -1,0 +1,40 @@
+{
+  "principles": [
+    "Clarity first: objective, owner, outcome.",
+    "Small batches ship faster; reduce WIP.",
+    "Design reviews > after\u2011the\u2011fact fixes.",
+    "1:1s for growth, not status.",
+    "Incident blamelessness; action items with deadlines.",
+    "Measure what matters (SLIs/SLOs).",
+    "Document decisions (ADRs); default to transparency."
+  ],
+  "playbooks": [
+    {
+      "name": "Delivery",
+      "steps": [
+        "Roadmap \u2192 Thin vertical slices",
+        "Trunk\u2011based flow",
+        "Dark launches",
+        "Feature flags"
+      ]
+    },
+    {
+      "name": "On\u2011call & Reliability",
+      "steps": [
+        "Golden signals",
+        "Runbooks",
+        "Postmortems within 48h",
+        "Error budgets"
+      ]
+    },
+    {
+      "name": "Hiring & Onboarding",
+      "steps": [
+        "Scorecards",
+        "Structured loops",
+        "90\u2011day onboarding doc",
+        "Mentor buddy"
+      ]
+    }
+  ]
+}

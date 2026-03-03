@@ -1,0 +1,29 @@
+{
+  "name": "Anurag Mishra",
+  "title": "Senior Software Engineer \u00b7 Engineering Leader",
+  "location": "Bengaluru, India",
+  "avatar": "/avatar.jpg",
+  "headline": "I build reliable systems and high\u2011performing teams.",
+  "bio": "Senior Software Engineer blending hands\u2011on architecture with team mentorship. I enjoy shipping resilient services, simplifying complexity, and coaching engineers to do their best work.",
+  "email": "anuragmishra.dev@gmail.com",
+  "contactnumber": "8789100593",
+  "links": {
+    "github": "https://github.com/snipedev",
+    "linkedin": "https://www.linkedin.com/in/anurag-mishra-0435",
+    "resume": "/Anurag_Mishra_Resume_ATS.pdf"
+  },
+  "quickStats": [
+    {
+      "label": "Systems Designed",
+      "value": "20+"
+    },
+    {
+      "label": "Teams Mentored",
+      "value": "10+"
+    },
+    {
+      "label": "Prod Incidents Resolved",
+      "value": "100+"
+    }
+  ]
+}

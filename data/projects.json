@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Event\u2011Driven Notifications Platform",
+    "category": "Systems Design",
+    "summary": "High\u2011volume notifications with exactly\u2011once semantics and dead\u2011letter workflows.",
+    "highlights": [
+      "Kafka topics per domain; outbox & idempotency keys",
+      "EventStoreDB for audit/append\u2011only streams",
+      "Retry with exponential backoff; DLQ visualization"
+    ],
+    "links": {
+      "repo": "https://github.com/<you>/notifications-platform",
+      "demo": "https://<your-demo>.vercel.app"
+    },
+    "stack": ["Go", ".NET", "Kafka", "EventStoreDB", "PostgreSQL", "K8s"]
+  },
+  {
+    "name": "Aspire\u2011Ready Microservices Template",
+    "category": ".NET Platform",
+    "summary": "Production\u2011ready starter with health checks, OpenTelemetry, and ADRs.",
+    "highlights": ["AuthN/Z", "Rate limiting", "Tracing", "Contracts"],
+    "links": {
+      "repo": "https://github.com/<you>/aspire-template"
+    },
+    "stack": [".NET", "OpenTelemetry", "PostgreSQL", "Redis"]
+  },
+  {
+    "name": "qemu\u2011os\u2011playground",
+    "category": "Systems/OS",
+    "summary": "A tiny x86 OS booted via QEMU with stage\u20112 loader and basic drivers.",
+    "highlights": ["boot.asm", "stage2.asm", "fat12", "printk"],
+    "links": {
+      "repo": "https://github.com/<you>/qemu-os-playground"
+    },
+    "stack": ["x86 asm", "C", "QEMU"]
+  },
+  {
+    "name": "Geo Search API",
+    "category": "Maps/Geo",
+    "summary": "Tile & nearby search with PostGIS; H3 indexing; caching for p95 < 120ms.",
+    "links": {
+      "repo": "https://github.com/<you>/geo-search-api"
+    },
+    "stack": ["Node/TS", "PostGIS", "Redis", "GCP"]
+  }
+]

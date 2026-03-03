@@ -1,0 +1,69 @@
+[
+  {
+    "period": "2023 \u2014 Present",
+    "role": "Senior Software Engineer",
+    "company": "Ge Healthcare (Confidential)",
+    "impact": [
+      "Led design of event\u2011driven microservices with Kafka for notifications, audit, and analytics.",
+      "Mentored 6 engineers; instituted design docs, ADRs, and incident retros with clear owners.",
+      "Reduced p95 API latency by 40% via caching, idempotent writes, and async workflows."
+    ],
+    "stack": [
+      ".NET",
+      "Go",
+      "Kafka",
+      "EventStoreDB",
+      "PostgreSQL",
+      "Redis",
+      "K8s",
+      "AWS"
+    ]
+  },
+  {
+    "period": "2022 \u2014 2023",
+    "role": "Software\u2011 Technologist",
+    "company": "Philips (Confidential)",
+    "impact": [
+      "Built geospatial APIs (tiles, nearby search), delivered SLA 99.95% with blue\u2011green deploys.",
+      "Introduced feature flags and ephemeral environments; cut release risk by ~60%.",
+      "Led platforms team"
+    ],
+    "stack": ["Envoy", "terraform", "C#/.NET", "Redis", "Azure"]
+  },
+  {
+    "period": "2021 \u2014 2022",
+    "role": "Software Engineer",
+    "company": "Preqin",
+    "impact": [
+      "Migrated monolith batch jobs to orchestrated workers; improved throughput 3\u00d7.",
+      "Set up on\u2011call runbooks and dashboards; MTTR < 20 min.",
+      "recieved best innovator award"
+    ],
+    "stack": [
+      "C#/.NET",
+      "RabbitMQ",
+      "SQL Server",
+      "Grafana",
+      "Docker",
+      "Elastic search"
+    ]
+  },
+  {
+    "period": "2019 \u2014 2021",
+    "role": "Consultant",
+    "company": "Deloitte",
+    "impact": [
+      "worked on core business unit",
+      "perfected the business intelligence models for the kentucky govt",
+      "recieved best and outstanding employee awards"
+    ],
+    "stack": ["C#/.NET", "RabbitMQ", "SQL Server", "Grafana", "Docker"]
+  },
+  {
+    "period": "2016 \u2014 2019",
+    "role": "Systems analyst",
+    "company": "TCS",
+    "impact": ["worked on core business unit"],
+    "stack": ["C#/.NET", "sharepoint", "jquery"]
+  }
+]

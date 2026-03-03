@@ -1,0 +1,15 @@
+{
+  "languages": ["Go", "C#/.NET", "Python", "TypeScript", "SQL", "java", "C++"],
+  "platforms": ["AWS", "GCP", "Linux", "Kubernetes"],
+  "dataStreaming": ["Kafka", "EventStoreDB"],
+  "datastores": ["PostgreSQL", "Redis", "Elastic"],
+  "frontend": ["Next.js", "React", "TailwindCSS"],
+  "devops": ["GitHub Actions", "Docker", "IaC"],
+  "leadership": [
+    "Coaching",
+    "Hiring",
+    "System Design Reviews",
+    "Incident Management",
+    "Roadmapping"
+  ]
+}
