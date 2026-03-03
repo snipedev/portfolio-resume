@@ -26,8 +26,9 @@ body {
 }
 
 .dock {
-  @apply fixed bottom-6 left-1/2 -translate-x-1/2 flex gap-3 p-3 bg-card border border-border rounded-2xl;
-  box-shadow: 0 20px 40px rgba(2, 6, 23, 0.45);
+  @apply fixed bottom-6 left-1/2 -translate-x-1/2 flex gap-3 p-3 bg-white/90 border border-white/40 rounded-2xl;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(2, 6, 23, 0.25);
 }
 
 .subtle-grid {

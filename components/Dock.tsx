@@ -29,7 +29,7 @@ export default function Dock({ onOpen }: { onOpen: (id: string) => void }) {
           whileTap={{ scale: 0.96 }}
           transition={{ type: "spring", stiffness: 420, damping: 24 }}
         >
-          <span className="text-white/75 group-hover:text-white transition">
+          <span className="text-gray-800 group-hover:text-neon transition">
             {it.icon}
           </span>
         </motion.button>
